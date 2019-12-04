@@ -1031,6 +1031,12 @@ class Template
                 //支持加载变量文件名
                 $templateName = $this->get(substr($templateName, 1));
             }
+            /****************** 修改开始 ********************/
+            // 解决模板 include 标签不支持自动定位当前控制器的问题
+            if (!preg_match("/(\/|\:)/", $templateName)) {
+                $templateName = str_replace(".", DS, \think\Loader::parseName(\think\Request::instance()->controller())) . DS . $templateName;
+            }
+            /****************** 修改结束 ********************/
             $template = $this->parseTemplateFile($templateName);
             if ($template) {
                 // 获取模板文件内容
