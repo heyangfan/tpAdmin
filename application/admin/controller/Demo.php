@@ -55,7 +55,7 @@ class Demo extends Controller
      * 下载远程图片
      * @return mixed
      */
-    public function downloadImage()
+    public function downloadimage()
     {
         if (Request::instance()->isPost()) {
             $url = $this->request->post("url");
@@ -159,7 +159,7 @@ class Demo extends Controller
     /**
      * 表格溢出
      */
-    public function tableFixed()
+    public function tablefixed()
     {
         return $this->view->fetch();
     }
@@ -167,7 +167,7 @@ class Demo extends Controller
     /**
      * 图片上传回调
      */
-    public function imageUpload()
+    public function imageupload()
     {
         return $this->view->fetch();
     }
