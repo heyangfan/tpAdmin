@@ -145,7 +145,7 @@ class Pub
 
                 // 保存登录信息
                 $update['last_login_time'] = time();
-                $update['login_count'] = ['exp', 'login_count+1'];
+                $update['login_count'] = Db::raw("login_count+1");
                 $update['last_login_ip'] = $this->request->ip();
                 Db::name("AdminUser")->where('id', $auth_info['id'])->update($update);
 
