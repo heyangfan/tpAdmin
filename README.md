@@ -1,28 +1,30 @@
+## 说明
+* fork自yuan1994/tpAdmin
+* 核心Thinkphp框架更新至5.0.24,解决诸多框架漏洞问题
+* 其他依赖包更新至对应版本
+
 ## tpadmin 是什么？
 tpadmin 是一个基于 ThinkPHP5.0 正式版和 Hui.admin v2.5 的管理后台，简化管理后台的开发流程，简化代码的编写，提高代码复用率，同时集成完整的权限管理和其他管理后台中常用的功能
 
 ## 官方文档
 [http://doc.tpadmin.yuan1994.com](http://doc.tpadmin.yuan1994.com)
 
-## 在线体验
-[http://tpadmin.yuan1994.com](http://tpadmin.yuan1994.com) 
-
 默认管理员帐号：admin，默认管理员密码：123456
 
 tpadmin 官方交流群：518162472
 
 ## 仓库地址
-[https://github.com/yuan1994/tpadmin](https://github.com/yuan1994/tpadmin)
+[https://github.com/heyangfan88/tpadmin](https://github.com/heyangfan88/tpadmin)
 
 ## 使用方法
 
 ### composer安装：
-composer create-project yuan1994/tpadmin tpadmin  --prefer-dist
+composer create-project heyangfan88/tpadmin tpadmin  --prefer-dist
 
 ### git克隆：
-git clone https://github.com/yuan1994/tpadmin
+git clone https://github.com/heyangfan88/tpadmin
 ### 直接下载：
-https://github.com/yuan1994/tpadmin/archive/master.zip
+https://github.com/heyangfan88/tpadmin/archive/master.zip
 > 框架的依赖需要通过 composer 下载，请在框架根目录执行 composer update ，已确保依赖的类库能下载下来
 
 ## 部署
@@ -72,6 +74,7 @@ https://github.com/yuan1994/tpadmin/archive/master.zip
 * jQuery Validform
 * 七牛
 * ...
+
 
 >非常感谢这些框架、插件的支持
 
